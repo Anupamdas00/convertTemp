@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript" ></script>
+    <title>Converter</title>
+</head>
+<body>
+    <div class="tempForm">
+        <form id="convForm" class="convForm" onsubmit="calculateTemp(); return false" >
+            <label for="Temparature">Type and select temparature to get result</label><br/>
+            <input type="number" name="temp" id="number" placeholder="0" >
+            <select name="tempType" id="tempType">
+                <option value="cel">°Celsius</option>
+                <option value="far">°Farenheit</option>
+            </select>
+            <br />
+            <input type="submit" name="submit" >
+            <br  />
+            <span id="resultContainer" ></span>
+            <input type="hidden" id="myField" value="" />
+
+        </form>
+    </div>
+    
+</body>
+</html>
